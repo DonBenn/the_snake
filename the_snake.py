@@ -161,7 +161,7 @@ def main():
             snake.length += 1
             apple.position = apple.randomize_position(snake.positions)
 
-        if snake.positions[0] in snake.positions[2:]:
+        elif snake.positions[0] in snake.positions[2:]:
             screen.fill(BOARD_BACKGROUND_COLOR)
             snake.reset()
         pygame.display.update()
